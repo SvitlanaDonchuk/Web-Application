@@ -28,6 +28,19 @@
         </div>
         <#if isRegisterForm>
             <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-4 mb-1">
+                    <input type="password" name="password2"
+                           class="form-control ${(password2Error??)?string('is-invalid', '')}"
+                           placeholder="Password"/>
+                    <#if password2Error??>
+                        <div class="invalid-feedback">
+                            ${password2Error}
+                        </div>
+                    </#if>
+                </div>
+            </div>
+            <div class="form-group row">
                 <label class="col-sm-2 col-form-label">Email:</label>
                 <div class="col-sm-4 mb-1">
                     <input type="email" name="email" value="<#if user??>${user.email}</#if>"
