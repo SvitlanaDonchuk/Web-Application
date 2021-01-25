@@ -2,6 +2,7 @@ package com.example.web.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -21,9 +22,11 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "Please fill the message")
+    @Length(max = 2048, message = "Message to long (more than 2kB)")
     private String text;
 
+    @Length(max = 255, message = "Tag to long (more than 255)")
     private String tag;
 
     @ManyToOne(fetch = FetchType.EAGER)

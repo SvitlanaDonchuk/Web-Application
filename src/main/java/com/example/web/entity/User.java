@@ -16,6 +16,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Table;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import java.util.Collection;
 import java.util.Set;
@@ -30,15 +31,16 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @NotBlank
+    @NotBlank(message = "User name can not be empty")
     private String username;
 
-    @NotBlank
+    @NotBlank(message = "Password can not be empty")
     private String password;
 
     private boolean active;
 
-    @NotBlank
+    @Email(message = "Email is not correct")
+    @NotBlank(message = "Email name can not be empty")
     private String email;
 
     private String activationCode;
