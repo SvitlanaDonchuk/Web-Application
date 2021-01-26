@@ -26,7 +26,7 @@
             </div>
             <div class="form-group mt-3">
                 <div class="custom-file-input">
-                    <input class="form-control" type="file" name="file">
+                    <input class="form-control" type="file" name="file" />
                 </div>
             </div>
             <input type="hidden" name="_csrf" value="${_csrf.token}" />
