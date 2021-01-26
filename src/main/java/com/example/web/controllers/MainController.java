@@ -93,10 +93,12 @@ public class MainController {
     ){
         Set<Message> messages = user.getMessages();
 
+        model.addAttribute("userChannel", user);
+        model.addAttribute("subscriptionsCount", user.getSubscriptions().size());
+        model.addAttribute("subscribersCount", user.getSubscribers().size());
+        model.addAttribute("isSubscriber", user.getSubscribers().contains(currentUser));
         model.addAttribute("messages", messages);
-
         model.addAttribute("message", messages.stream().filter(msg -> Objects.equals(msg.getId(), messageId)).findFirst().orElse(null));
-
         model.addAttribute("isCurrentUser", currentUser.equals(user));
 
         return "userMessages";

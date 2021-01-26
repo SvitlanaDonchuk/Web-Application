@@ -20,6 +20,6 @@
             </div>
         </div>
     <#else>
-        No message
+        <p>No messages</p>
     </#list>
 </div>
