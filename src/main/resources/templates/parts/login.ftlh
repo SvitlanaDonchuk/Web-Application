@@ -62,11 +62,11 @@
                 </#if>
             </div>
         </#if>
+        <#if !isRegisterForm>
+            <a class="form-group row mt-3 btn btn-primary me-2" href="/registration">Registration</a>
+        </#if>
         <input type="hidden" name="_csrf" value="${_csrf.token}" />
         <button class="btn btn-primary mt-3" type="submit"><#if isRegisterForm>Create<#else>Sign In</#if></button>
-        <#if !isRegisterForm>
-            <a class="form-group row ms-1 mt-3" href="/registration">Registration</a>
-        </#if>
     </form>
 </#macro>
 
