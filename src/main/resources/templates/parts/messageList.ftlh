@@ -10,11 +10,22 @@
             </#if>
             <div class="card-body">
                 <span>${message.text}</span>
-                <i>#${message.tag}</i>
+                <div class="mt-1">
+                    <i>#${message.tag}</i>
+                </div>
             </div>
             <div class="card-footer text-muted container">
                 <div class="row">
-                    <a class="col align-self-center" href="/user-messages/${message.author.id}">${message.authorName}</a>
+                    <a class="col btn btn-outline-primary" href="/user-messages/${message.author.id}">${message.authorName}</a>
+                    <a class="col align-self-center d-flex justify-content-center align-items-center text-decoration-none"
+                       href="/messages/${message.id}/likes">
+                        <#if message.meLiked>
+                            <i class="fas fa-heart"></i>
+                        <#else>
+                            <i class="far fa-heart"></i>
+                        </#if>
+                        ${message.likes}
+                    </a>
                     <#if message.author.id == currentUserId>
                         <a class="col btn btn-primary" href="/user-messages/${message.author.id}?messageId=${message.id}">
                             Edit
