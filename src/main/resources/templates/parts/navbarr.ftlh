@@ -1,7 +1,4 @@
 <#include "security.ftlh">
-<#import "login.ftlh" as l>
-<#import "login.ftlh" as logIn>
-
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -33,13 +30,23 @@
                     </li>
                 </#if>
             </ul>
-            <#if user??>
-                <div class="navbar-text me-3">${name}</div>
-                <@l.logout />
-            </#if>
-            <#if !user??>
-                <@logIn.logIn />
-            </#if>
+            <div class="navbar-text me-3">
+                <#if user??>
+                    ${name}
+                <#else>
+                    Please, login
+                </#if>
+            </div>
+            <form action="/logout" method="post">
+                <input type="hidden" name="_csrf" value="${_csrf.token}" />
+                <button class="btn btn-primary" type="submit">
+                    <#if user??>
+                        Sign Out
+                    <#else>
+                        Sign In
+                    </#if>
+                </button>
+            </form>
         </div>
     </div>
 </nav>

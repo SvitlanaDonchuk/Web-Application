@@ -66,20 +66,12 @@
             <a class="form-group row mt-3 btn btn-primary me-2" href="/registration">Registration</a>
         </#if>
         <input type="hidden" name="_csrf" value="${_csrf.token}" />
-        <button class="btn btn-primary mt-3" type="submit"><#if isRegisterForm>Create<#else>Sign In</#if></button>
-    </form>
-</#macro>
-
-<#macro logout>
-    <form action="/logout" method="post">
-        <input type="hidden" name="_csrf" value="${_csrf.token}" />
-        <button class="btn btn-primary" type="submit">Sign Out</button>
-    </form>
-</#macro>
-
-<#macro logIn>
-    <form action="/login" method="post">
-        <input type="hidden" name="_csrf" value="${_csrf.token}" />
-        <button class="btn btn-primary" type="submit">Sign In</button>
+        <button class="btn btn-primary mt-3" type="submit">
+            <#if isRegisterForm>
+                Create
+            <#else>
+                Sign In
+            </#if>
+        </button>
     </form>
 </#macro>
