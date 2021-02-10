@@ -30,7 +30,7 @@ public class UserController {
     public String userList(Model model){
         model.addAttribute("users", userService.findAll());
 
-        return "userList";
+        return "userList/userList";
     }
 
     @PreAuthorize("hasAuthority('ADMIN')")
@@ -39,7 +39,7 @@ public class UserController {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
 
-        return "userEdit";
+        return "userEdit/userEdit";
     }
 
     @PreAuthorize("hasAuthority('ADMIN')")
@@ -59,7 +59,7 @@ public class UserController {
         model.addAttribute("username", user.getUsername());
         model.addAttribute("email", user.getEmail());
 
-        return "profile";
+        return "profileSettings/profile";
     }
 
     @PostMapping("profile")
@@ -109,6 +109,6 @@ public class UserController {
             model.addAttribute("users", user.getSubscribers());
         }
 
-        return "subscriptions";
+        return "subscriptions/subscriptions";
     }
 }

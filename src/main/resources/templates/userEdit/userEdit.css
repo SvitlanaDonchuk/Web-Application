@@ -1,0 +1,50 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+}
+
+.box {
+    display: flex;
+    margin: 3%;
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 4%;
+}
+
+.checkbox:hover .checkbox-check {
+    background: #e7f4f2;
+}
+
+.checkbox-input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-check {
+    background: #6dce87;
+    stroke-dashoffset: 0;
+}
+
+.checkbox-check {
+    border: 0.2rem solid #6dce87;
+    stroke: #e7f4f2;
+    stroke-dasharray: 25;
+    stroke-dashoffset: 25;
+    stroke-linecap: round;
+    stroke-width: 0.2rem;
+    border-radius: 0.2rem;
+    fill: none;
+    transition: background 0.4s, stroke-dashoffset 0.6s;
+}
+
+.role-text {
+    color: #939597;
+    font-weight: 600;
+    padding-top: 1px;
+}

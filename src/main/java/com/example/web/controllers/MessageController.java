@@ -63,7 +63,7 @@ public class MessageController {
         model.addAttribute("url", "/main");
         model.addAttribute("filter", filter);
 
-        return "main";
+        return "main/main";
     }
 
     @PostMapping("/main")
@@ -93,7 +93,7 @@ public class MessageController {
 
         model.addAttribute("messages", messages);
 
-        return "main";
+        return "redirect:/main";
     }
 
     @GetMapping("/user-messages/{author}")
@@ -115,7 +115,7 @@ public class MessageController {
         model.addAttribute("isCurrentUser", currentUser.equals(author));
         model.addAttribute("url", "/user-messages/" + author.getId());
 
-        return "userMessages";
+        return "userMessages/userMessages";
     }
 
     @PostMapping("/user-messages/{user}")
@@ -189,7 +189,6 @@ public class MessageController {
                 .forEach(pair -> redirectAttributes.addAttribute(pair.getKey(), pair.getValue()));
 
         model.addAttribute("message", message);
-
 
         return "redirect:" + components.getPath();
     }

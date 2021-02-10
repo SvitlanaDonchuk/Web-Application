@@ -1,0 +1,55 @@
+.profile-button {
+    color: #6dce87;
+    transition: .5s;
+    font-weight: 500;
+    background: #e7f4f2;
+    border-radius: 0.7rem;
+    padding: .375rem .75rem;
+    border: 2px solid #6dce87;
+    margin-top: 15px;
+    width: 35%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.profile-button:hover {
+    color: #fff;
+    background: #6dce87;
+}
+
+.change-form-input_form-control {
+    font-weight: 150;
+    font-size: 17px;
+    color: #525252;
+    letter-spacing: 0.2px;
+    text-align: left;
+    border: none;
+    height: 32px;
+    width: 100%;
+    opacity: 1;
+    background: transparent;
+    border-bottom: solid #d2d2d2 2px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.change-form-input_form-control:focus {
+    border-bottom: solid #6dce87 2px;
+}
+
+.title-text {
+    font-weight: 650;
+    font-size: 22px;
+    color: #303436;
+    letter-spacing: 0.85px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 4%;
+    color: #939597;
+}

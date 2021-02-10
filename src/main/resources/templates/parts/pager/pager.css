@@ -1,0 +1,56 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+    font-weight: 500;
+}
+
+.pager-container {
+    margin-top: 1%;
+}
+
+.pager-container-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pager-container-pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    flex: 1% 0 0;
+}
+
+.pager-item {
+    list-style: none;
+}
+
+.pager-item.disabled .pager-link {
+    color: #25282a;
+    pointer-events: none;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+
+.pager-link {
+    position: relative;
+    padding: .25rem .65rem;
+    outline: none;
+    display: block;
+    color: #25282a;
+    text-decoration: none;
+    background-color: #fff;
+    transition: 0.5s;
+    margin-right: 3px;
+}
+
+.pager-link:hover {
+    background-color: #fcebbf;
+    border-radius: 0.8rem;
+}
+
+.pager-item.active .pager-link {
+    color: #fff;
+    background-color: #f6cd4c;
+    border-radius: 0.8rem;
+}

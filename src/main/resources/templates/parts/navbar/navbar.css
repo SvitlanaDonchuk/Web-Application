@@ -1,0 +1,61 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+    margin: 0;
+}
+
+.navigation-bar {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa!important;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.navigation-bar-container {
+    width: 100%;
+}
+
+.navigation-bar-container-content {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.navigation-bar-container-content_a {
+    position: relative;
+    margin-right: 3%;
+    text-align: center;
+    color: #949494;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navigation-bar-container-content_additional-a {
+    color: #f6cd4c;
+}
+
+.navigation-bar-container-content_a:hover {
+    color: #f6cd4c;
+}
+
+.navigation-bar-container-content_additional-div {
+    padding-right: 15px;
+    font-size: 17px;
+}
+
+.navigation-bar-container-content_li {
+    display: contents;
+}
+
+.navigation-bar-container-content_ul {
+    display: flex;
+    width: 77%;
+    padding-inline-start: 0;
+}

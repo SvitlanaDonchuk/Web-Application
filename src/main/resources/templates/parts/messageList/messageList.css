@@ -1,0 +1,87 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+}
+
+.message-list {
+    width: 100%;
+    display: list-item;
+    margin-top: 2%;
+    list-style: none;
+}
+
+.message-list-card {
+    width: 35%;
+    height: auto;
+    margin: 10px auto 0;
+    border: 2px solid #f1f1f1;
+    border-radius: 0.7rem;
+}
+
+.message-list-card-img {
+    width: 40%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    vertical-align: middle;
+}
+
+.message-list-card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+.message-list-card-body-mt {
+    margin-top: .25rem!important;
+}
+
+.message-list-card-footer {
+    padding: .5rem 1rem;
+    background-color: #fafafa;
+    border-top: 2px solid #f1f1f1;
+}
+
+.message-list-card-footer:last-child {
+    border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+
+.message-list-card-footer-user-row {
+    display: flex;
+}
+
+.message-list-card-footer-user-row-button {
+    display: inline-block;
+    font-weight: 00;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    transition: .5s;
+    border: 2px solid #f6cd4c;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: 0.7rem;
+}
+
+.message-list-card-footer-user-row-button:hover {
+    background-color: #f6cd4c;
+}
+
+.button-edit {
+    background-color: #f6cd4c;
+}
+
+.message-list-card-footer-user-likes {
+    margin: 0 auto;
+    display: inline;
+    justify-content: center!important;
+    align-items: center!important;
+    align-self: center!important;
+    text-decoration: none!important;
+    color: #212529;
+}
+
+.heat-color {
+    color: #f9423a;
+}

@@ -1,0 +1,138 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+}
+
+.login-form {
+    width: 304px;
+    display: flex;
+    margin:  0 auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form-input {
+    width: 100%;
+    height: 56px;
+    display: contents;
+    align-items: baseline;
+}
+
+.registration_title-text {
+    font-weight: 650;
+    font-size: 22px;
+    color: #303436;
+    letter-spacing: 0.85px;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 25px;
+}
+
+.login-form-input_invalid-feedback {
+    color: #ff525e;
+    font-size: 0.8em;
+}
+
+.is-invalid {
+    border-bottom: solid #fc5b5b 2px;
+}
+
+
+.login-form-input_form-control {
+    font-weight: 500;
+    font-size: 17px;
+    color: #525252;
+    letter-spacing: 0.2px;
+    text-align: left;
+    border: none;
+    height: 32px;
+    width: 100%;
+    opacity: 1;
+    background: transparent;
+    border-bottom: solid #d2d2d2 2px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.login-form-input_form-control:focus {
+    border-bottom: solid #f6cd4c 2px;
+}
+
+.login-button {
+    color: #fff;
+    transition: .5s;
+    font-weight: 500;
+    background: #25282a;
+    border-radius: 0.7rem;
+    border: 0 solid transparent;
+    padding: .475rem .75rem;
+    font-size: 15px;
+    align-self: center;
+}
+
+.login-button:hover {
+    cursor: pointer;
+}
+
+.login-form-input_submit {
+    width: 100%;
+}
+
+.messageEdit-form {
+    margin-top: 2%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.login-form-input_registration {
+    margin-left: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f6cd4c;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-form-input_registration:hover {
+    color: #f3bf09;
+}
+
+.ifError {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.login-form-input_alert {
+    width: 100%;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 70%;
+    margin: 1% auto 1%;
+}
+
+.alertWidth {
+    width: 25%;
+}
+
+.login-form-input_alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.login-form-input_alert-danger {
+    color: #d76565;
+    background-color: #f8d7da;
+    border-color: #ff6969;
+}

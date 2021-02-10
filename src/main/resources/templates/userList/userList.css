@@ -1,0 +1,44 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+}
+
+.list-users {
+    display: flex;
+    justify-content: center;
+}
+
+.list-users_table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #fff;
+    color: #656665;
+    border: 3px solid #6dce87;
+    border-radius: 20px;
+}
+
+.list-users_table-th {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.list-users_table-td {
+    background: #e7f4f2;
+    padding: 10px;
+    border: 2px solid #6dce87;
+    border-radius: 10px;
+}
+
+.list-users_table-additional-td {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.list-users_table-td-edit {
+    background: #6dce87;
+    padding: 10px;
+    border: 2px solid #6dce87;
+    border-radius: 10px;
+}

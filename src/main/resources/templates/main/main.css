@@ -1,0 +1,62 @@
+body {
+    font-family: "Avenir Next", "Helvetica Neue", Arial,-apple-system, Roboto, sans-serif;
+}
+
+.search-block {
+    display: flex;
+}
+
+.search-block-row {
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    padding-top: 1%;
+}
+
+.search-form {
+    display: flex;
+    margin:  0 auto;
+}
+
+.search-form-input {
+    font-weight: 500;
+    font-size: 17px;
+    color: #525252;
+    letter-spacing: 0.2px;
+    text-align: left;
+    border: none;
+    height: 32px;
+    width: 100%;
+    opacity: 1;
+    background: transparent;
+    border-bottom: solid #d2d2d2 2px;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    z-index: 3;
+}
+
+.search-form-input:focus {
+    border-bottom: solid #f6cd4c 2px;
+}
+
+.search-form-button {
+    color: #fff;
+    transition: .5s;
+    font-weight: 450;
+    background: #25282a;
+    border-radius: 0.7rem;
+    border: 2px solid #25282a;
+    padding: .4rem .7rem;
+    font-size: 13px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.search-form-button:hover {
+    color: #25282a;
+    background: #f6cd4c;
+    border: 2px solid #f6cd4c;
+
+}

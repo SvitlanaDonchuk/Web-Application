@@ -1,0 +1,71 @@
+.messageEdit-handler-button {
+    color: #fff;
+    transition: .5s;
+    font-weight: 500;
+    background: #25282a;
+    border-radius: 0.7rem;
+    border: 0 solid transparent;
+    padding: .475rem .75rem;
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.messageEdit {
+    display: flex;
+    padding-top: 2%;
+}
+
+.messageEdit-handler {
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
+
+.messageEdit-additional {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.custom-file-input {
+    width: 100%;
+}
+
+.form-control {
+    color: #939597;
+    background-color: #fff;
+    border: 2px solid #d2d2d2;
+    border-radius: 0.7rem;
+    width: 76%;
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 auto 5%;
+}
+
+.align-right {
+    margin: 0 0 0 auto;
+    width: 36%;
+}
+
+.size {
+    width: 20%;
+}
+
+.align-right:hover {
+    color: #25282a;
+    background-color: #f6cd4c;
+}
+
+.messageEdit-form,
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .messageEdit-form {
+    display: block;
+}

@@ -1,7 +1,11 @@
 <#import "parts/common.ftlh" as c>
 
+<style type="text/css">
+    <#include "profileSettings/profile.css">
+</style>
+
 <@c.page>
-    <h5>
+    <div class="title-text">
        Hello, guest
-    </h5>
+    </div>
 </@c.page>
