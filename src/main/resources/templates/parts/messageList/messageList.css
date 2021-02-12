@@ -17,6 +17,10 @@ body {
     border-radius: 0.7rem;
 }
 
+.message-list-card-img-block {
+    text-align: center;
+}
+
 .message-list-card-img {
     width: 40%;
     border-top-left-radius: calc(.25rem - 1px);
@@ -27,6 +31,10 @@ body {
 .message-list-card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem;
+}
+
+.message-list-card_tag {
+    margin-top: 10px;
 }
 
 .message-list-card-body-mt {
@@ -49,8 +57,6 @@ body {
 
 .message-list-card-footer-user-row-button {
     display: inline-block;
-    font-weight: 00;
-    line-height: 1.5;
     color: #212529;
     text-align: center;
     text-decoration: none;
@@ -59,8 +65,8 @@ body {
     user-select: none;
     transition: .5s;
     border: 2px solid #f6cd4c;
-    padding: .375rem .75rem;
-    font-size: 1rem;
+    padding: .3rem .6rem;
+    font-size: 0.8rem;
     border-radius: 0.7rem;
 }
 
@@ -70,10 +76,11 @@ body {
 
 .button-edit {
     background-color: #f6cd4c;
+    color: #fff;
 }
 
 .message-list-card-footer-user-likes {
-    margin: 0 auto;
+    margin: auto;
     display: inline;
     justify-content: center!important;
     align-items: center!important;
@@ -82,6 +89,22 @@ body {
     color: #212529;
 }
 
-.heat-color {
+.heart-color {
     color: #f9423a;
+}
+
+.message-list-card-footer-user-delete-form {
+    margin: 0;
+}
+
+.button-delete {
+    color: #fff;
+    background: #525252;
+    border: 2px solid #525252;
+    height: 32px;
+    border-radius: 0.7rem;
+}
+
+.message-list-card-footer-user-row-button.button-delete:hover {
+    background: #525252;
 }
