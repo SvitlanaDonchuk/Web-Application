@@ -45,7 +45,7 @@
             </div>
         </div>
     <#else>
-        <p>No messages</p>
+        <p class="user-handler-text no-messages_text">No messages</p>
     </#list>
 </div>
 <@p.pager url page></@p.pager>

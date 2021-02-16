@@ -1,0 +1,21 @@
+.learn-more-button {
+    color: #fff;
+    transition: .5s;
+    font-weight: 500;
+    background: #f6cd4c;
+    border-radius: 0.7rem;
+    border: 0 solid transparent;
+    padding: .475rem .75rem;
+    font-size: 15px;
+    width: 10%;
+}
+
+.learn-more {
+    justify-content: center;
+    display: flex;
+}
+
+.learn-more-button_text {
+    text-decoration: none;
+    color: #fff;
+}

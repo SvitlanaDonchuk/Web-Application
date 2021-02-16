@@ -64,6 +64,14 @@
                 </#if>
             </button>
         </div>
+        <#if isRegisterForm>
+            <div class="login-form-input">
+                <div class="footer">
+                    <p class="messageEdit-form">Have an account?</p>
+                    <a class="login-form-input_registration" href="/login">Sign In</a>
+                </div>
+            </div>
+        </#if>
         <#if !isRegisterForm>
             <div class="login-form-input">
                 <div class="footer">

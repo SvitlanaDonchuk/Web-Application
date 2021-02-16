@@ -77,6 +77,7 @@ body {
 .button-edit {
     background-color: #f6cd4c;
     color: #fff;
+    padding-top: 6px;
 }
 
 .message-list-card-footer-user-likes {
@@ -107,4 +108,9 @@ body {
 
 .message-list-card-footer-user-row-button.button-delete:hover {
     background: #525252;
+}
+
+.no-messages_text {
+    font-weight: 600;
+    font-size: 20px;
 }

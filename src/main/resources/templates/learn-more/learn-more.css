@@ -1,0 +1,34 @@
+.learn-more_title-text {
+    font-weight: 650;
+    font-size: 21px;
+    color: #303436;
+    letter-spacing: 1px;
+    line-height: 52px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.fa_color {
+    color: #6dce87;
+    margin-right: 2%;
+}
+
+.learn-more_ul {
+    width: 50%;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.learn-more_li {
+    font-weight: 500;
+    font-size: 18px;
+    color: #303436;
+    line-height: 40px;
+}
+
+.learn-more_footer-a {
+    color: #f6cd4c;
+    font-weight: 550;
+    text-decoration: none;
+}
+
